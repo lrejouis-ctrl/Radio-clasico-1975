@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classic Radio 1490 — La Frecuencia del Alma</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Cinzel:wght@400;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="visual-background">
+        <div class="bg-overlay"></div>
+        <div class="bg-particles" id="particles"></div>
+    </div>
+
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo-link">
+                <svg class="logo-svg" viewBox="0 0 60 60">
+                    <circle cx="30" cy="30" r="28" fill="none" stroke="#C9A961" stroke-width="1.5"/>
+                    <circle cx="30" cy="30" r="24" fill="none" stroke="#C9A961" stroke-width="0.5"/>
+                    <path d="M30 15 L30 45 M22 22 L38 38 M38 22 L22 38" stroke="#C9A961" stroke-width="1" fill="none"/>
+                    <circle cx="30" cy="30" r="4" fill="#722F37"/>
+                </svg>
+                <div class="logo-text">
+                    <span class="logo-name">Classic</span>
+                    <span class="logo-sub">Radio 1490</span>
+                </div>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Inicio</a></li>
+                <li><a href="programas.html">Programas</a></li>
+                <li><a href="podcasts.html">Podcasts</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+            </ul>
+            <button class="menu-toggle" aria-label="Menú">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-ornament top-left"></div>
+        <div class="hero-ornament top-right"></div>
+        <div class="hero-ornament bottom-left"></div>
+        <div class="hero-ornament bottom-right"></div>
+        
+        <div class="container hero-content">
+            <div class="hero-seal">
+                <svg viewBox="0 0 120 120">
+                    <circle cx="60" cy="60" r="55" fill="none" stroke="#C9A961" stroke-width="1"/>
+                    <circle cx="60" cy="60" r="50" fill="none" stroke="#C9A961" stroke-width="0.5"/>
+                    <text x="60" y="45" text-anchor="middle" font-family="Cinzel" font-size="10" fill="#C9A961" letter-spacing="2">ANNO</text>
+                    <text x="60" y="65" text-anchor="middle" font-family="Cinzel" font-size="18" fill="#C9A961" font-weight="700">1490</text>
+                    <text x="60" y="85" text-anchor="middle" font-family="Cinzel" font-size="8" fill="#C9A961" letter-spacing="1">RADIO</text>
+                </svg>
+            </div>
+            
+            <p class="hero-eyebrow">✦ La frecuencia del alma ✦</p>
+            <h1 class="hero-title">Donde cada palabra<br>es una <em>revelación</em></h1>
+            <p class="hero-description">Una radio creada para menteseeee inquietas. Por y para quienes buscan la verdad detrás del ruido.</p>
+            
+            <div class="hero-divider">
+                <span></span>
+                <i class="fas fa-feather-pointed"></i>
+                <span></span>
+            </div>
+            
+            <div class="hero-cta-group">
+                <a href="#actual" class="btn-primary">
+                    <i class="fas fa-play"></i> Escuchar Ahora
+                </a>
+                <a href="programas.html" class="btn-secondary">
+                    <i class="fas fa-calendar"></i> Ver Programación
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="actual" class="on-air-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-ornament">❧</span>
+                <h2 class="section-title">En Vivo Ahora</h2>
+                <p class="section-subtitle">Con Leonardo · La voz de Classic 1490</p>
+            </div>
+
+            <div class="on-air-card">
+                <div class="on-air-live">
+                    <span class="live-dot"></span>
+                    <span>EN VIVO</span>
+                </div>
+                <div class="on-air-info">
+                    <span class="on-air-time">06:00 — 10:00</span>
+                    <h3>El Despertar de los Sentidos</h3>
+                    <p class="on-air-host">Con <strong>Leonardo</strong></p>
+                    <p class="on-air-desc">Un espacio para abrir los ojos al mundo. Reflexiones, música selecta y conversaciones que invitan a pensar diferente.</p>
+                </div>
+                <div class="on-air-next">
+                    <span class="next-label">Próximamente</span>
+                    <span class="next-show">10:00 — Crónicas del Silencio · Con Leonardo</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="featured-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-ornament">❧</span>
+                <h2 class="section-title">Nuestros Programas</h2>
+                <p class="section-subtitle">Cada hora, una nueva forma de ver el mundo</p>
+            </div>
+
+            <div class="programs-grid">
+                <a href="programas.html" class="program-card">
+                    <div class="program-icon"><i class="fas fa-sun"></i></div>
+                    <h3>El Despertar de los Sentidos</h3>
+                    <p class="program-time">06:00 — 10:00 · Lun a Vie</p>
+                    <p class="program-desc">Reflexiones matutinas para comenzar el día pensando diferente.</p>
+                </a>
+                <a href="programas.html" class="program-card">
+                    <div class="program-icon"><i class="fas fa-scroll"></i></div>
+                    <h3>Crónicas del Silencio</h3>
+                    <p class="program-time">10:00 — 13:00 · Lun a Vie</p>
+                    <p class="program-desc">Historias que nadie cuenta. El lado B de la historia.</p>
+                </a>
+                <a href="programas.html" class="program-card">
+                    <div class="program-icon"><i class="fas fa-eye"></i></div>
+                    <h3>Archivos Prohibidos</h3>
+                    <p class="program-time">16:00 — 19:00 · Lun a Vie</p>
+                    <p class="program-desc">Enigmas sin resolver. Lo que la historia oficial prefiere que olvides.</p>
+                </a>
+                <a href="programas.html" class="program-card">
+                    <div class="program-icon"><i class="fas fa-moon"></i></div>
+                    <h3>Noche Eterna</h3>
+                    <p class="program-time">22:00 — 00:00 · Lun a Vie</p>
+                    <p class="program-desc">Jazz nocturno y reflexiones para las mentes que no duermen.</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="quote-section">
+        <div class="container">
+            <span class="quote-mark">"</span>
+            <blockquote class="quote-text">
+                No hago radio para entretener.<br>
+                La hago para <em>despertar</em>.
+            </blockquote>
+            <cite class="quote-author">— Leonardo</cite>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>Classic Radio 1490</h4>
+                    <p>La frecuencia del alma. Transmitiendo desde 1490.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Navegación</h4>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="programas.html">Programas</a></li>
+                        <li><a href="podcasts.html">Podcasts</a></li>
+                        <li><a href="nosotros.html">Nosotros</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contacto</h4>
+                    <ul>
+                        <li><i class="fas fa-envelope"></i> leonardo@classic1490.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 1490 — 2026 Classic Radio. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="floating-player" id="floating-player">
+        <div class="fp-info">
+            <div class="fp-artwork"><i class="fas fa-music"></i></div>
+            <div class="fp-text">
+                <p class="fp-title" id="fp-title">Esperando transmisión...</p>
+                <p class="fp-artist" id="fp-artist">Con Leonardo</p>
+            </div>
+        </div>
+        <div class="fp-controls">
+            <button class="fp-btn" id="fp-rewind" title="Retroceder 15s"><i class="fas fa-backward"></i></button>
+            <button class="fp-btn fp-play" id="fp-play" title="Reproducir"><i class="fas fa-play" id="fp-play-icon"></i></button>
+            <button class="fp-btn" id="fp-forward" title="Adelantar 15s"><i class="fas fa-forward"></i></button>
+        </div>
+        <div class="fp-progress">
+            <div class="fp-progress-bar" id="fp-progress-bar">
+                <div class="fp-progress-fill" id="fp-progress-fill"></div>
+            </div>
+            <span class="fp-time" id="fp-time">0:00 / 0:00</span>
+        </div>
+        <div class="fp-actions">
+            <label for="fp-file" class="fp-action-btn" title="Subir audio"><i class="fas fa-upload"></i></label>
+            <input type="file" id="fp-file" accept="audio/*" hidden>
+            <button class="fp-action-btn" id="fp-url" title="Usar URL"><i class="fas fa-link"></i></button>
+            <button class="fp-action-btn" id="fp-speed" title="Velocidad"><span id="fp-speed-label">1x</span></button>
+            <button class="fp-action-btn" id="fp-sleep" title="Temporizador"><i class="fas fa-moon"></i></button>
+            <button class="fp-action-btn" id="fp-favorite" title="Favorito"><i class="far fa-heart" id="fp-fav-icon"></i></button>
+            <button class="fp-action-btn" id="fp-volume-btn" title="Volumen"><i class="fas fa-volume-high" id="fp-volume-icon"></i></button>
+            <input type="range" id="fp-volume" min="0" max="100" value="70" class="fp-volume-slider">
+            <button class="fp-action-btn" id="fp-expand" title="Expandir"><i class="fas fa-expand"></i></button>
+        </div>
+        <audio id="main-audio" preload="metadata"></audio>
+    </div>
+
+    <div class="player-modal" id="player-modal">
+        <div class="modal-content">
+            <button class="modal-close" id="modal-close"><i class="fas fa-times"></i></button>
+            <div class="modal-artwork"><i class="fas fa-music"></i></div>
+            <h2 id="modal-title">Esperando transmisión...</h2>
+            <p id="modal-artist">Con Leonardo</p>
+            <div class="modal-visualizer" id="modal-visualizer">
+                <span></span><span></span><span></span><span></span><span></span>
+                <span></span><span></span><span></span><span></span><span></span>
+                <span></span><span></span><span></span><span></span>
+            </div>
+            <div class="modal-progress">
+                <span id="modal-current">0:00</span>
+                <div class="modal-progress-bar" id="modal-progress-bar">
+                    <div class="modal-progress-fill" id="modal-progress-fill"></div>
+                </div>
+                <span id="modal-total">0:00</span>
+            </div>
+            <div class="modal-controls">
+                <button class="modal-btn" id="modal-rewind"><i class="fas fa-backward"></i></button>
+                <button class="modal-btn modal-play" id="modal-play"><i class="fas fa-play" id="modal-play-icon"></i></button>
+                <button class="modal-btn" id="modal-forward"><i class="fas fa-forward"></i></button>
+            </div>
+            <div class="modal-extra">
+                <button class="modal-extra-btn" id="modal-speed">
+                    <i class="fas fa-gauge-high"></i> <span id="modal-speed-label">Velocidad: 1x</span>
+                </button>
+                <button class="modal-extra-btn" id="modal-sleep">
+                    <i class="fas fa-moon"></i> <span>Temporizador</span>
+                </button>
+                <button class="modal-extra-btn" id="modal-favorite">
+                    <i class="far fa-heart" id="modal-fav-icon"></i> <span>Favorito</span>
+                </button>
+            </div>
+            <div class="modal-volume">
+                <i class="fas fa-volume-low"></i>
+                <input type="range" id="modal-volume" min="0" max="100" value="70">
+                <span id="modal-vol-value">70%</span>
+            </div>
+            <div class="modal-source">
+                <p class="source-label">— Fuente de audio —</p>
+                <div class="source-buttons">
+                    <label for="modal-file" class="source-btn"><i class="fas fa-upload"></i> Subir audio</label>
+                    <input type="file" id="modal-file" accept="audio/*" hidden>
+                    <button class="source-btn" id="modal-url"><i class="fas fa-link"></i> Usar URL</button>
+                    <button class="source-btn" id="modal-clear"><i class="fas fa-trash"></i> Limpiar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="notification" id="notification">
+        <i class="fas fa-check-circle"></i>
+        <span id="notification-text"></span>
+    </div>
+
+    <script src="player.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
