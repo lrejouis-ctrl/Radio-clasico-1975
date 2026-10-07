@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programación — Classic Radio 1490</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Cinzel:wght@400;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="visual-background">
+        <div class="bg-overlay"></div>
+        <div class="bg-particles" id="particles"></div>
+    </div>
+
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo-link">
+                <svg class="logo-svg" viewBox="0 0 60 60">
+                    <circle cx="30" cy="30" r="28" fill="none" stroke="#C9A961" stroke-width="1.5"/>
+                    <circle cx="30" cy="30" r="24" fill="none" stroke="#C9A961" stroke-width="0.5"/>
+                    <path d="M30 15 L30 45 M22 22 L38 38 M38 22 L22 38" stroke="#C9A961" stroke-width="1" fill="none"/>
+                    <circle cx="30" cy="30" r="4" fill="#722F37"/>
+                </svg>
+                <div class="logo-text">
+                    <span class="logo-name">Classic</span>
+                    <span class="logo-sub">Radio 1490</span>
+                </div>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="programas.html" class="active">Programas</a></li>
+                <li><a href="podcasts.html">Podcasts</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+            </ul>
+            <button class="menu-toggle" aria-label="Menú"><span></span><span></span><span></span></button>
+        </div>
+    </nav>
+
+    <section class="page-hero">
+        <div class="container">
+            <p class="page-eyebrow">✦ Nuestra programación ✦</p>
+            <h1 class="page-title">Programas</h1>
+            <p class="page-subtitle">Con Leonardo · Cada hora, una nueva forma de ver el mundo</p>
+        </div>
+    </section>
+
+    <section class="schedule-section">
+        <div class="container">
+            <div class="schedule-day">
+                <h2 class="day-title">Lunes a Viernes</h2>
+                
+                <div class="schedule-grid">
+                    <article class="schedule-item">
+                        <div class="schedule-time">
+                            <span class="time-start">06:00</span>
+                            <span class="time-end">10:00</span>
+                        </div>
+                        <div class="schedule-content">
+                            <h3>El Despertar de los Sentidos</h3>
+                            <p class="schedule-host">Con Leonardo</p>
+                            <p class="schedule-desc">Reflexiones matutinas, música selecta y conversaciones que abren los ojos al mundo. Un programa para comenzar el día pensando diferente.</p>
+                            <span class="schedule-tag">Reflexión · Música</span>
+                        </div>
+                    </article>
+
+                    <article class="schedule-item">
+                        <div class="schedule-time">
+                            <span class="time-start">10:00</span>
+                            <span class="time-end">13:00</span>
+                        </div>
+                        <div class="schedule-content">
+                            <h3>Crónicas del Silencio</h3>
+                            <p class="schedule-host">Con Leonardo</p>
+                            <p class="schedule-desc">Historias que nadie cuenta. Personajes olvidados, eventos silenciados, verdades incómodas. El lado B de la historia.</p>
+                            <span class="schedule-tag">Historia · Misterio</span>
+                        </div>
+                    </article>
+
+                    <article class="schedule-item">
+                        <div class="schedule-time">
+                            <span class="time-start">13:00</span>
+                            <span class="time-end">16:00</span>
+                        </div>
+                        <div class="schedule-content">
+                            <h3>La Biblioteca Infinita</h3>
+                            <p class="schedule-host">Con Leonardo</p>
+                            <p class="schedule-desc">Un recorrido por los libros que cambiaron el mundo. Análisis profundo, lecturas en voz alta, y recomendaciones para mentes curiosas.</p>
+                            <span class="schedule-tag">Literatura · Cultura</span>
+                        </div>
+                    </article>
+
+                    <article class="schedule-item">
+                        <div class="schedule-time">
+                            <span class="time-start">16:00</span>
+                            <span class="time-end">19:00</span>
+                        </div>
+                        <div class="schedule-content">
+                            <h3>Archivos Prohibidos</h3>
+                            <p class="schedule-host">Con Leonardo</p>
+                            <p class="schedule-desc">Documentos clasificados, sociedades secretas, enigmas sin resolver. Lo que la historia oficial prefiere que olvides.</p>
+                            <span class="schedule-tag">Investigación · Misterio</span>
+                        </div>
+                    </article>
+
+                    <article class="schedule-item">
+                        <div class="schedule-time">
+                            <span class="time-start">19:00</span>
+                            <span class="time-end">22:00</span>
+                        </div>
+                        <div class="schedule-content">
+                            <h3>Vino y Poesía</h3>
+                            <p class="schedule-host">Con Leonardo</p>
+                            <p class="schedule-desc">Los grandes poemas de la humanidad, acompañados de jazz, city pop y la mejor música para cerrar el día con el alma llena.</p>
+                            <span class="schedule-tag">Poesía · Música</span>
+                        </div>
+                    </article>
+
+                    <article class="schedule-item">
+                        <div class="schedule-time">
+                            <span class="time-start">22:00</span>
+                            <span class="time-end">00:00</span>
+                        </div>
+                        <div class="schedule-content">
+                            <h3>Noche Eterna</h3>
+                            <p class="schedule-host">Con Leonardo</p>
+                            <p class="schedule-desc">Jazz nocturno, conversaciones íntimas y reflexiones para las mentes que no duermen. Para los que buscan en la oscuridad.</p>
+                            <span class="schedule-tag">Jazz · Nocturno</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+            <div class="schedule-day">
+                <h2 class="day-title">Sábados y Domingos</h2>
+                <div class="schedule-grid">
+                    <article class="schedule-item">
+                        <div class="schedule-time">
+                            <span class="time-start">10:00</span>
+                            <span class="time-end">13:00</span>
+                        </div>
+                        <div class="schedule-content">
+                            <h3>El Arte de Pensar</h3>
+                            <p class="schedule-host">Con Leonardo</p>
+                            <p class="schedule-desc">Filosofía para no-filósofos. Los grandes pensadores explicados de forma clara, profunda y apasionante.</p>
+                            <span class="schedule-tag">Filosofía · Fin de semana</span>
+                        </div>
+                    </article>
+
+                    <article class="schedule-item">
+                        <div class="schedule-time">
+                            <span class="time-start">18:00</span>
+                            <span class="time-end">21:00</span>
+                        </div>
+                        <div class="schedule-content">
+                            <h3>Sinfonía de las Sombras</h3>
+                            <p class="schedule-host">Especial musical con Leonardo</p>
+                            <p class="schedule-desc">Música clásica, jazz experimental y composiciones originales. Tres horas de arte sonoro sin interrupciones.</p>
+                            <span class="schedule-tag">Música clásica · Especial</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>© 1490 — 2026 Classic Radio. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="floating-player" id="floating-player">
+        <div class="fp-info">
+            <div class="fp-artwork"><i class="fas fa-music"></i></div>
+            <div class="fp-text">
+                <p class="fp-title" id="fp-title">Esperando transmisión...</p>
+                <p class="fp-artist" id="fp-artist">Con Leonardo</p>
+            </div>
+        </div>
+        <div class="fp-controls">
+            <button class="fp-btn" id="fp-rewind"><i class="fas fa-backward"></i></button>
+            <button class="fp-btn fp-play" id="fp-play"><i class="fas fa-play" id="fp-play-icon"></i></button>
+            <button class="fp-btn" id="fp-forward"><i class="fas fa-forward"></i></button>
+        </div>
+        <div class="fp-progress">
+            <div class="fp-progress-bar" id="fp-progress-bar">
+                <div class="fp-progress-fill" id="fp-progress-fill"></div>
+            </div>
+            <span class="fp-time" id="fp-time">0:00 / 0:00</span>
+        </div>
+        <div class="fp-actions">
+            <label for="fp-file" class="fp-action-btn"><i class="fas fa-upload"></i></label>
+            <input type="file" id="fp-file" accept="audio/*" hidden>
+            <button class="fp-action-btn" id="fp-url"><i class="fas fa-link"></i></button>
+            <button class="fp-action-btn" id="fp-speed"><span id="fp-speed-label">1x</span></button>
+            <button class="fp-action-btn" id="fp-sleep"><i class="fas fa-moon"></i></button>
+            <button class="fp-action-btn" id="fp-favorite"><i class="far fa-heart" id="fp-fav-icon"></i></button>
+            <button class="fp-action-btn" id="fp-volume-btn"><i class="fas fa-volume-high" id="fp-volume-icon"></i></button>
+            <input type="range" id="fp-volume" min="0" max="100" value="70" class="fp-volume-slider">
+            <button class="fp-action-btn" id="fp-expand"><i class="fas fa-expand"></i></button>
+        </div>
+        <audio id="main-audio" preload="metadata"></audio>
+    </div>
+
+    <div class="player-modal" id="player-modal">
+        <div class="modal-content">
+            <button class="modal-close" id="modal-close"><i class="fas fa-times"></i></button>
+            <div class="modal-artwork"><i class="fas fa-music"></i></div>
+            <h2 id="modal-title">Esperando transmisión...</h2>
+            <p id="modal-artist">Con Leonardo</p>
+            <div class="modal-visualizer" id="modal-visualizer">
+                <span></span><span></span><span></span><span></span><span></span>
+                <span></span><span></span><span></span><span></span><span></span>
+                <span></span><span></span><span></span><span></span>
+            </div>
+            <div class="modal-progress">
+                <span id="modal-current">0:00</span>
+                <div class="modal-progress-bar" id="modal-progress-bar">
+                    <div class="modal-progress-fill" id="modal-progress-fill"></div>
+                </div>
+                <span id="modal-total">0:00</span>
+            </div>
+            <div class="modal-controls">
+                <button class="modal-btn" id="modal-rewind"><i class="fas fa-backward"></i></button>
+                <button class="modal-btn modal-play" id="modal-play"><i class="fas fa-play" id="modal-play-icon"></i></button>
+                <button class="modal-btn" id="modal-forward"><i class="fas fa-forward"></i></button>
+            </div>
+            <div class="modal-extra">
+                <button class="modal-extra-btn" id="modal-speed"><i class="fas fa-gauge-high"></i> <span id="modal-speed-label">Velocidad: 1x</span></button>
+                <button class="modal-extra-btn" id="modal-sleep"><i class="fas fa-moon"></i> <span>Temporizador</span></button>
+                <button class="modal-extra-btn" id="modal-favorite"><i class="far fa-heart" id="modal-fav-icon"></i> <span>Favorito</span></button>
+            </div>
+            <div class="modal-volume">
+                <i class="fas fa-volume-low"></i>
+                <input type="range" id="modal-volume" min="0" max="100" value="70">
+                <span id="modal-vol-value">70%</span>
+            </div>
+            <div class="modal-source">
+                <p class="source-label">— Fuente de audio —</p>
+                <div class="source-buttons">
+                    <label for="modal-file" class="source-btn"><i class="fas fa-upload"></i> Subir audio</label>
+                    <input type="file" id="modal-file" accept="audio/*" hidden>
+                    <button class="source-btn" id="modal-url"><i class="fas fa-link"></i> Usar URL</button>
+                    <button class="source-btn" id="modal-clear"><i class="fas fa-trash"></i> Limpiar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="notification" id="notification">
+        <i class="fas fa-check-circle"></i>
+        <span id="notification-text"></span>
+    </div>
+
+    <script src="player.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

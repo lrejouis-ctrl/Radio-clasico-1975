@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Podcasts — Classic Radio 1490</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Cinzel:wght@400;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="visual-background">
+        <div class="bg-overlay"></div>
+        <div class="bg-particles" id="particles"></div>
+    </div>
+
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo-link">
+                <svg class="logo-svg" viewBox="0 0 60 60">
+                    <circle cx="30" cy="30" r="28" fill="none" stroke="#C9A961" stroke-width="1.5"/>
+                    <circle cx="30" cy="30" r="24" fill="none" stroke="#C9A961" stroke-width="0.5"/>
+                    <path d="M30 15 L30 45 M22 22 L38 38 M38 22 L22 38" stroke="#C9A961" stroke-width="1" fill="none"/>
+                    <circle cx="30" cy="30" r="4" fill="#722F37"/>
+                </svg>
+                <div class="logo-text">
+                    <span class="logo-name">Classic</span>
+                    <span class="logo-sub">Radio 1490</span>
+                </div>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="programas.html">Programas</a></li>
+                <li><a href="podcasts.html" class="active">Podcasts</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+            </ul>
+            <button class="menu-toggle" aria-label="Menú"><span></span><span></span><span></span></button>
+        </div>
+    </nav>
+
+    <section class="page-hero">
+        <div class="container">
+            <p class="page-eyebrow">✦ Escucha cuando quieras ✦</p>
+            <h1 class="page-title">Podcasts</h1>
+            <p class="page-subtitle">Por Leonardo · Los mejores episodios disponibles para ti</p>
+        </div>
+    </section>
+
+    <section class="filter-section">
+        <div class="container">
+            <div class="filter-bar">
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="despertar">El Despertar</button>
+                <button class="filter-btn" data-filter="cronicas">Crónicas</button>
+                <button class="filter-btn" data-filter="archivos">Archivos</button>
+                <button class="filter-btn" data-filter="noche">Noche Eterna</button>
+                <button class="filter-btn" data-filter="musica">Música</button>
+                <button class="filter-btn" data-filter="favoritos"><i class="fas fa-heart"></i> Favoritos</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="podcasts-section">
+        <div class="container">
+            <div class="podcasts-grid" id="podcasts-grid">
+
+                <article class="podcast-card" data-category="despertar" data-src="https://archive.org/download/cd_also-sprach-zaratustra_friedrich-nietzsche-thomas-lettis/disc1/friedrich-nietzsche-thomas-lettis-also-sprach-zaratustra-01.mp3" data-title="Así Habló Zaratustra I" data-artist="El Despertar de los Sentidos">
+                    <div class="podcast-cover"><i class="fas fa-sun"></i></div>
+                    <div class="podcast-info">
+                        <span class="podcast-series">El Despertar de los Sentidos</span>
+                        <h3>Así Habló Zaratustra — Prólogo</h3>
+                        <p class="podcast-desc">Friedrich Nietzsche nos invita a reflexionar sobre el superhombre, la muerte de Dios y el eterno retorno. Una obra que cambió la filosofía para siempre.</p>
+                        <div class="podcast-meta">
+                            <span><i class="fas fa-clock"></i> 32 min</span>
+                            <span><i class="fas fa-user"></i> Leonardo</span>
+                        </div>
+                        <button class="podcast-play"><i class="fas fa-play"></i> Escuchar</button>
+                    </div>
+                </article>
+
+                <article class="podcast-card" data-category="cronicas" data-src="https://archive.org/download/odisea_01-02_homero_librivox/odisea_01_homero.mp3" data-title="La Odisea — Libro I" data-artist="Crónicas del Silencio">
+                    <div class="podcast-cover"><i class="fas fa-ship"></i></div>
+                    <div class="podcast-info">
+                        <span class="podcast-series">Crónicas del Silencio</span>
+                        <h3>La Odisea — El Regreso de Ulises</h3>
+                        <p class="podcast-desc">Homero nos cuenta el viaje más épico de la literatura. Ulises, diez años después de Troya, lucha por volver a casa. Una historia sobre la perseverancia humana.</p>
+                        <div class="podcast-meta">
+                            <span><i class="fas fa-clock"></i> 45 min</span>
+                            <span><i class="fas fa-user"></i> Leonardo</span>
+                        </div>
+                        <button class="podcast-play"><i class="fas fa-play"></i> Escuchar</button>
+                    </div>
+                </article>
+
+                <article class="podcast-card" data-category="musica" data-src="https://archive.org/download/MoonlightSonata_755/Beethoven-MoonlightSonata.mp3" data-title="Sonata Claro de Luna" data-artist="Noche Eterna · Música">
+                    <div class="podcast-cover"><i class="fas fa-moon"></i></div>
+                    <div class="podcast-info">
+                        <span class="podcast-series">Noche Eterna</span>
+                        <h3>Beethoven — Sonata Claro de Luna</h3>
+                        <p class="podcast-desc">La obra maestra de Beethoven, completa. Compuesta en 1801, dedicada a su alumna la condesa Giulietta Guicciardi. Tres movimientos que definen el romanticismo.</p>
+                        <div class="podcast-meta">
+                            <span><i class="fas fa-clock"></i> 15 min</span>
+                            <span><i class="fas fa-user"></i> Beethoven</span>
+                        </div>
+                        <button class="podcast-play"><i class="fas fa-play"></i> Escuchar</button>
+                    </div>
+                </article>
+
+                <article class="podcast-card" data-category="despertar" data-src="https://archive.org/download/elprincipito_01_saint-exupery_librivox/elprincipito_01_saint-exupery.mp3" data-title="El Principito — Capítulo 1" data-artist="El Despertar de los Sentidos">
+                    <div class="podcast-cover"><i class="fas fa-star"></i></div>
+                    <div class="podcast-info">
+                        <span class="podcast-series">El Despertar de los Sentidos</span>
+                        <h3>El Principito — Lo esencial es invisible</h3>
+                        <p class="podcast-desc">Antoine de Saint-Exupéry nos recuerda que los adultos han olvidado cómo mirar. Un cuento para niños que es en realidad un tratado sobre la vida.</p>
+                        <div class="podcast-meta">
+                            <span><i class="fas fa-clock"></i> 12 min</span>
+                            <span><i class="fas fa-user"></i> Leonardo</span>
+                        </div>
+                        <button class="podcast-play"><i class="fas fa-play"></i> Escuchar</button>
+                    </div>
+                </article>
+
+                <article class="podcast-card" data-category="noche" data-src="https://archive.org/download/rimas_y_leyendas_becquer_librivox/rimas_01_becquer.mp3" data-title="Rimas de Bécquer" data-artist="Noche Eterna · Poesía">
+                    <div class="podcast-cover"><i class="fas fa-feather"></i></div>
+                    <div class="podcast-info">
+                        <span class="podcast-series">Noche Eterna</span>
+                        <h3>Gustavo Adolfo Bécquer — Rimas</h3>
+                        <p class="podcast-desc">"¿Qué es poesía?, dices mientras clavas en mi pupila tu pupila azul." Las rimas más íntimas del romanticismo español, leídas en la noche.</p>
+                        <div class="podcast-meta">
+                            <span><i class="fas fa-clock"></i> 28 min</span>
+                            <span><i class="fas fa-user"></i> Leonardo</span>
+                        </div>
+                        <button class="podcast-play"><i class="fas fa-play"></i> Escuchar</button>
+                    </div>
+                </article>
+
+                <article class="podcast-card" data-category="musica" data-src="https://archive.org/download/Chopin_Grand_Waltz/Chopin_Grand_Waltz.mp3" data-title="Chopin — Gran Vals" data-artist="Música Clásica">
+                    <div class="podcast-cover"><i class="fas fa-music"></i></div>
+                    <div class="podcast-info">
+                        <span class="podcast-series">Música Clásica</span>
+                        <h3>Chopin — Gran Vals en La bemol mayor</h3>
+                        <p class="podcast-desc">El "Vals del Adiós" de Chopin. Una pieza que combina la elegancia del salón vienés con la melancolía del alma polaca del compositor.</p>
+                        <div class="podcast-meta">
+                            <span><i class="fas fa-clock"></i> 8 min</span>
+                            <span><i class="fas fa-user"></i> Chopin</span>
+                        </div>
+                        <button class="podcast-play"><i class="fas fa-play"></i> Escuchar</button>
+                    </div>
+                </article>
+
+                <article class="podcast-card" data-category="archivos" data-src="https://archive.org/download/the_raven_poe_librivox/raven_poe.mp3" data-title="El Cuervo — Edgar Allan Poe" data-artist="Archivos Prohibidos">
+                    <div class="podcast-cover"><i class="fas fa-crow"></i></div>
+                    <div class="podcast-info">
+                        <span class="podcast-series">Archivos Prohibidos</span>
+                        <h3>El Cuervo — Edgar Allan Poe</h3>
+                        <p class="podcast-desc">"Nunca más". El poema más famoso de Poe, una inmersión en la locura, el duelo y lo sobrenatural. Una obra maestra del terror gótico.</p>
+                        <div class="podcast-meta">
+                            <span><i class="fas fa-clock"></i> 12 min</span>
+                            <span><i class="fas fa-user"></i> Leonardo</span>
+                        </div>
+                        <button class="podcast-play"><i class="fas fa-play"></i> Escuchar</button>
+                    </div>
+                </article>
+
+                <article class="podcast-card" data-category="musica" data-src="https://archive.org/download/MozartSonata11K545/mozart_sonata_11_k545_1.mp3" data-title="Mozart — Sonata K545" data-artist="Música Clásica">
+                    <div class="podcast-cover"><i class="fas fa-piano"></i></div>
+                    <div class="podcast-info">
+                        <span class="podcast-series">Música Clásica</span>
+                        <h3>Mozart — Sonata Fácil en Do Mayor</h3>
+                        <p class="podcast-desc">La sonata más famosa de Mozart. Compuesta en 1788, es la definición musical de la elegancia clásica. Simple, perfecta, eterna.</p>
+                        <div class="podcast-meta">
+                            <span><i class="fas fa-clock"></i> 6 min</span>
+                            <span><i class="fas fa-user"></i> Mozart</span>
+                        </div>
+                        <button class="podcast-play"><i class="fas fa-play"></i> Escuchar</button>
+                    </div>
+                </article>
+
+                <article class="podcast-card" data-category="cronicas" data-src="https://archive.org/download/don_quijote_01_cervantes_librivox/donquijote_01_cervantes.mp3" data-title="Don Quijote — Capítulo 1" data-artist="Crónicas del Silencio">
+                    <div class="podcast-cover"><i class="fas fa-horse"></i></div>
+                    <div class="podcast-info">
+                        <span class="podcast-series">Crónicas del Silencio</span>
+                        <h3>Don Quijote — En un lugar de la Mancha</h3>
+                        <p class="podcast-desc">"En un lugar de la Mancha, de cuyo nombre no quiero acordarme..." La novela que inició la literatura moderna. Cervantes nos presenta al hidalgo que cambió el mundo.</p>
+                        <div class="podcast-meta">
+                            <span><i class="fas fa-clock"></i> 35 min</span>
+                            <span><i class="fas fa-user"></i> Leonardo</span>
+                        </div>
+                        <button class="podcast-play"><i class="fas fa-play"></i> Escuchar</button>
+                    </div>
+                </article>
+
+                <article class="podcast-card" data-category="musica" data-src="https://archive.org/download/DebussyClairDeLune/debussy_clair_de_lune.mp3" data-title="Debussy — Claro de Luna" data-artist="Noche Eterna · Música">
+                    <div class="podcast-cover"><i class="fas fa-cloud-moon"></i></div>
+                    <div class="podcast-info">
+                        <span class="podcast-series">Noche Eterna</span>
+                        <h3>Debussy — Claro de Luna</h3>
+                        <p class="podcast-desc">La tercera pieza de la Suite Bergamasque. Una obra que captura la luz de la luna sobre el agua. Impresionismo sonoro en su máxima expresión.</p>
+                        <div class="podcast-meta">
+                            <span><i class="fas fa-clock"></i> 5 min</span>
+                            <span><i class="fas fa-user"></i> Debussy</span>
+                        </div>
+                        <button class="podcast-play"><i class="fas fa-play"></i> Escuchar</button>
+                    </div>
+                </article>
+
+                <article class="podcast-card" data-category="archivos" data-src="https://archive.org/download/el_aleph_borges_librivox/el_aleph_01_borges.mp3" data-title="El Aleph — Borges" data-artist="Archivos Prohibidos">
+                    <div class="podcast-cover"><i class="fas fa-infinity"></i></div>
+                    <div class="podcast-info">
+                        <span class="podcast-series">Archivos Prohibidos</span>
+                        <h3>El Aleph — Jorge Luis Borges</h3>
+                        <p class="podcast-desc">Un punto en el sótano de una casa de Buenos Aires que contiene todos los puntos del universo. Borges nos invita a mirar lo infinito con ojos humanos.</p>
+                        <div class="podcast-meta">
+                            <span><i class="fas fa-clock"></i> 25 min</span>
+                            <span><i class="fas fa-user"></i> Leonardo</span>
+                        </div>
+                        <button class="podcast-play"><i class="fas fa-play"></i> Escuchar</button>
+                    </div>
+                </article>
+
+                <article class="podcast-card" data-category="musica" data-src="https://archive.org/download/VivaldiFourSeasonsSpring/vivaldi_four_seasons_spring_1.mp3" data-title="Vivaldi — Las Cuatro Estaciones: Primavera" data-artist="Música Clásica">
+                    <div class="podcast-cover"><i class="fas fa-seedling"></i></div>
+                    <div class="podcast-info">
+                        <span class="podcast-series">Música Clásica</span>
+                        <h3>Vivaldi — Las Cuatro Estaciones: Primavera</h3>
+                        <p class="podcast-desc">El primer movimiento de la obra más famosa de Vivaldi. Compuesta en 1723, es la banda sonora eterna del renacer de la naturaleza.</p>
+                        <div class="podcast-meta">
+                            <span><i class="fas fa-clock"></i> 3 min</span>
+                            <span><i class="fas fa-user"></i> Vivaldi</span>
+                        </div>
+                        <button class="podcast-play"><i class="fas fa-play"></i> Escuchar</button>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>© 1490 — 2026 Classic Radio. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="floating-player" id="floating-player">
+        <div class="fp-info">
+            <div class="fp-artwork"><i class="fas fa-music"></i></div>
+            <div class="fp-text">
+                <p class="fp-title" id="fp-title">Esperando transmisión...</p>
+                <p class="fp-artist" id="fp-artist">Con Leonardo</p>
+            </div>
+        </div>
+        <div class="fp-controls">
+            <button class="fp-btn" id="fp-rewind"><i class="fas fa-backward"></i></button>
+            <button class="fp-btn fp-play" id="fp-play"><i class="fas fa-play" id="fp-play-icon"></i></button>
+            <button class="fp-btn" id="fp-forward"><i class="fas fa-forward"></i></button>
+        </div>
+        <div class="fp-progress">
+            <div class="fp-progress-bar" id="fp-progress-bar">
+                <div class="fp-progress-fill" id="fp-progress-fill"></div>
+            </div>
+            <span class="fp-time" id="fp-time">0:00 / 0:00</span>
+        </div>
+        <div class="fp-actions">
+            <label for="fp-file" class="fp-action-btn"><i class="fas fa-upload"></i></label>
+            <input type="file" id="fp-file" accept="audio/*" hidden>
+            <button class="fp-action-btn" id="fp-url"><i class="fas fa-link"></i></button>
+            <button class="fp-action-btn" id="fp-speed"><span id="fp-speed-label">1x</span></button>
+            <button class="fp-action-btn" id="fp-sleep"><i class="fas fa-moon"></i></button>
+            <button class="fp-action-btn" id="fp-favorite"><i class="far fa-heart" id="fp-fav-icon"></i></button>
+            <button class="fp-action-btn" id="fp-volume-btn"><i class="fas fa-volume-high" id="fp-volume-icon"></i></button>
+            <input type="range" id="fp-volume" min="0" max="100" value="70" class="fp-volume-slider">
+            <button class="fp-action-btn" id="fp-expand"><i class="fas fa-expand"></i></button>
+        </div>
+        <audio id="main-audio" preload="metadata"></audio>
+    </div>
+
+    <div class="player-modal" id="player-modal">
+        <div class="modal-content">
+            <button class="modal-close" id="modal-close"><i class="fas fa-times"></i></button>
+            <div class="modal-artwork"><i class="fas fa-music"></i></div>
+            <h2 id="modal-title">Esperando transmisión...</h2>
+            <p id="modal-artist">Con Leonardo</p>
+            <div class="modal-visualizer" id="modal-visualizer">
+                <span></span><span></span><span></span><span></span><span></span>
+                <span></span><span></span><span></span><span></span><span></span>
+                <span></span><span></span><span></span><span></span>
+            </div>
+            <div class="modal-progress">
+                <span id="modal-current">0:00</span>
+                <div class="modal-progress-bar" id="modal-progress-bar">
+                    <div class="modal-progress-fill" id="modal-progress-fill"></div>
+                </div>
+                <span id="modal-total">0:00</span>
+            </div>
+            <div class="modal-controls">
+                <button class="modal-btn" id="modal-rewind"><i class="fas fa-backward"></i></button>
+                <button class="modal-btn modal-play" id="modal-play"><i class="fas fa-play" id="modal-play-icon"></i></button>
+                <button class="modal-btn" id="modal-forward"><i class="fas fa-forward"></i></button>
+            </div>
+            <div class="modal-extra">
+                <button class="modal-extra-btn" id="modal-speed"><i class="fas fa-gauge-high"></i> <span id="modal-speed-label">Velocidad: 1x</span></button>
+                <button class="modal-extra-btn" id="modal-sleep"><i class="fas fa-moon"></i> <span>Temporizador</span></button>
+                <button class="modal-extra-btn" id="modal-favorite"><i class="far fa-heart" id="modal-fav-icon"></i> <span>Favorito</span></button>
+            </div>
+            <div class="modal-volume">
+                <i class="fas fa-volume-low"></i>
+                <input type="range" id="modal-volume" min="0" max="100" value="70">
+                <span id="modal-vol-value">70%</span>
+            </div>
+            <div class="modal-source">
+                <p class="source-label">— Fuente de audio —</p>
+                <div class="source-buttons">
+                    <label for="modal-file" class="source-btn"><i class="fas fa-upload"></i> Subir audio</label>
+                    <input type="file" id="modal-file" accept="audio/*" hidden>
+                    <button class="source-btn" id="modal-url"><i class="fas fa-link"></i> Usar URL</button>
+                    <button class="source-btn" id="modal-clear"><i class="fas fa-trash"></i> Limpiar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="notification" id="notification">
+        <i class="fas fa-check-circle"></i>
+        <span id="notification-text"></span>
+    </div>
+
+    <script src="player.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
